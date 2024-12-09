@@ -1,0 +1,10 @@
+
+sh_binary(
+    name = "twine",
+    srcs = [":twine.sh"],
+    data = ["@rules_python//tools/publish:twine"],
+    env = {
+        "TWINE_WRAPPER": "$(rlocationpath @rules_python//tools/publish:twine)",
+    },
+    visibility = ["//visibility:public"],
+)

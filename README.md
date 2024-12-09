@@ -1,0 +1,6 @@
+Works:
+USE_BAZEL_VERSION=7.4.1 bazel build //...
+
+
+Fails:
+USE_BAZEL_VERSION=8.0.0 bazel build //...

@@ -1,0 +1,7 @@
+module(
+    name = "location_repro",
+    version = "0.0.0",
+)
+
+bazel_dep(name = "rules_python", version = "0.40.0")
+bazel_dep(name = "rules_shell", version = "0.3.0")
